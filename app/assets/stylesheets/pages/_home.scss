@@ -1,4 +1,12 @@
 // Specific CSS for your home-page
 body {
-  background-color: rgb(241, 243, 255)
+  background-color: $light-orange;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+p, h1, h2 {
+  color: $dark-blue;
 }

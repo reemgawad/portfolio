@@ -1,6 +1,6 @@
 .navbar-lewagon {
   justify-content: space-between;
-  background: rgb(241, 243, 255);
+  background: $light-orange;
 }
 
 .navbar-lewagon .navbar-collapse {
@@ -9,4 +9,32 @@
 
 .navbar-lewagon .navbar-brand img {
   width: 40px;
+}
+
+.nav-link {
+  color: $dark-blue !important;
+
+  &:hover {
+    color: $dark-blue !important;
+  }
+}
+
+.dropdown-menu {
+  border-radius: 20px;
+  background: $lighter-blue;
+}
+
+.dropdown-toggle::after {
+  border-top: 0.1em solid transparent !important;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0; // remove the gap so it doesn't close
+}
+
+.dropdown-item:hover {
+  background-color: $lighter-blue !important;
+  color: $bright-orange;
+  transition-delay: 0.08s;
 }
