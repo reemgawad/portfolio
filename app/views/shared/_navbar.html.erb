@@ -11,16 +11,27 @@
             </div>
           </li>
           <li class="nav-item">
-            <%= link_to "About", about_path, class: "nav-link hover-underline-animation ml-20" %>
+            <%= link_to "About", about_path, class: "nav-link hover-underline-animation ms-3" %>
           </li>
           <li class="nav-item">
-            <%= link_to "Contact", "#", class: "nav-link hover-underline-animation ml-20" %>
+            <%= link_to "Contact", "#", class: "nav-link hover-underline-animation ms-3" %>
           </li>
       </ul>
     </div>
 
-    <%= link_to root_path, class: "navbar-brand" do %>
-      <%= image_tag "evileye.png" %>
-    <% end %>
+      <%= link_to root_path, class: "navbar-brand" do %>
+        <%= image_tag "evileye.png" %>
+      <% end %>
+
+    <div>
+      <%= link_to "https://github.com/reemgawad", class: "navbar-brand", target: "_blank" do %>
+        <%= image_tag "github.png" %>
+      <% end %>
+
+       <%= link_to "https://www.linkedin.com/in/reemgawad", class: "navbar-brand ps-3", target: "_blank" do %>
+        <%= image_tag "linkedin.png" %>
+      <% end %>
+    </div>
+
   </div>
 </div>
