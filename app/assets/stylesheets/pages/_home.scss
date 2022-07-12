@@ -17,5 +17,16 @@ h1, h2 {
 }
 
 .main-heading {
-  font-size: 85px;
+  font-size: 79px;
+}
+
+.home-heading-container {
+  height: calc(100vh - 49.5px);
+  width: 50vw;
+  display: flex;
+  align-items: center;
+}
+
+.showcase-container {
+
 }
