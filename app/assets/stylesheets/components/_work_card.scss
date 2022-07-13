@@ -2,13 +2,13 @@
   height: 300px;
   margin: 30px auto;
   width: 35vw;
-  border: 1px solid grey;
   border-radius: 15px;
   position: relative;
+  transition: all .3s ease-in-out;
 
   &:hover {
     transform: translate3d(0,-5px,0);
-    box-shadow: 0 40px 74px -3px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 40px 74px -3px rgba(238, 130, 116, 0.25);
   }
 }
 
@@ -22,18 +22,31 @@
 
   p {
     font-size: 12px;
-    margin: 8px 0;
+    margin: 12px 0;
+    color: $light-blue;
   }
 
   h3 {
     margin-bottom: 0;
+    color: $burnt-orange;
   }
 }
 
 .brunchtime {
-  z-index: 100;
   background-image: url("brunchtime-homepg.png");
   background-size: cover;
-  background-position-y: bottom;
   background-repeat: no-repeat;
+  // background-attachment:inherit;
+  // background-position-y: bottom;
+}
+
+.ruby-games {
+  background-image: url("snakegame.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+
+.sajil {
+  background-color: $lighter-blue;
 }
