@@ -8,7 +8,7 @@
 
   &:hover {
     transform: translate3d(0,-5px,0);
-    box-shadow: 0 40px 74px -3px rgba(238, 131, 116, 0.15);
+    box-shadow: 0 40px 74px -3px rgba(238, 130, 116, 0.25);
   }
 }
 
@@ -38,6 +38,13 @@
   background-repeat: no-repeat;
   // background-attachment:inherit;
   // background-position-y: bottom;
+}
+
+.ruby-games {
+  background-image: url("snakegame.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+
 }
 
 .sajil {
