@@ -1,6 +1,6 @@
 <div class="d-flex justify-content-between">
   <div class="home-heading-container">
-    <div style="margin-left: 50px">
+    <div style="margin: 0 auto;">
       <h1 class="main-heading">Hi, I'm <span class="hover-underline-animation">Reem</span></h1>
       <br>
       <h2 style="margin-left: 100px">- a software developer.</h2>
@@ -12,9 +12,29 @@
   <div>
     <div class="showcase-container">
       <div class="work-container">
-        <div style="height:200px; margin:10px; width: 40vw; border: 1px solid grey">coming soon</div>
-        <div style="height:200px; margin:10px; width: 40vw; border: 1px solid grey">coming soon</div>
-        <div style="height:200px; margin:10px; width: 40vw; border: 1px solid grey">coming soon</div>
+      <%= link_to brunchtime_path do %>
+        <div class="work-card brunchtime">
+          <div class="work-desc">
+            <p>WEB APP</p>
+          </div>
+        </div>
+      <% end %>
+      <%= link_to ruby_games_path do %>
+        <div class="work-card">
+          <div class="work-desc">
+            <p>WEB APP</p>
+            <h3>coming soon</h3>
+          </div>
+        </div>
+      <% end %>
+      <%= link_to ruby_games_path do %>
+        <div class="work-card">
+          <div class="work-desc">
+            <p>WEB APP</p>
+            <h3>coming soon</h3>
+          </div>
+        </div>
+      <% end %>
       </div>
     </div>
   </div>
