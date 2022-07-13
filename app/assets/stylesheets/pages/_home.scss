@@ -22,14 +22,14 @@ h1, h2 {
 
 .home-heading-container {
   height: calc(100vh - 49.5px);
-  width: 50vw;
+  width: 45vw;
   display: flex;
   align-items: center;
 }
 
 .showcase-container {
   height: calc(100vh - 49.5px);
-  width: 50vw;
+  width: 65vw;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -38,6 +38,6 @@ h1, h2 {
 .work-container {
   height: 600px;
   overflow-y: scroll;
-  width: 50vw;
+  width: 65vw;
   padding-bottom: 50px;
 }
