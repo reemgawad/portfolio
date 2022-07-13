@@ -38,12 +38,18 @@ h1, h2 {
 .work-container {
   height: 600px;
   overflow-y: scroll;
+  width: 50vw;
 }
 
 .work-card {
   height: 300px;
-  margin: 20px 0px;
+  margin: 30px auto;
   width: 40vw;
   border: 1px solid grey;
   border-radius: 15px;
+
+  &:hover {
+    transform: translate3d(0,-5px,0);
+    box-shadow: 0 40px 74px rgba(0, 0, 0, 0.12);
+  }
 }
