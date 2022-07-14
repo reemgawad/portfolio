@@ -15,25 +15,52 @@ h1, h2 {
   font-family: "Source Serif Pro", "serif";
 }
 
-// h2 {
-//   font-family: 'Poppins', "sans-serif";
-//   font-weight: 300;
-// }
-
 .main-heading {
-  font-size: 4.2vw;
+  font-size: 65px;
 }
 
 .sub-heading {
-  font-size: 2.2vw;
+  font-size: 32px;
 }
 
-.action-p {
-  font-size: 1.1vw;
+// if screen size is between 1399px and 991px, set mainheading to 50px
+@media only screen
+  and (min-width: 991px)
+  and (max-width: 1399px) {
+    .main-heading {
+      font-size: 50px;
+    }
 }
+
+// if screen size is between 991px and 768px, set mainheading to 45px
+@media only screen
+  and (min-width: 768px)
+  and (max-width: 991px) {
+    .main-heading {
+      font-size: 45px;
+    }
+}
+
+// if screen size is between 1399px and 991px, set subheading to 50px
+@media only screen
+  and (min-width: 768px)
+  and (max-width: 1399px) {
+    .sub-heading {
+      font-size: 25px;
+    }
+}
+
+// if screen size is between 991px and 768px, set subheading to 45px
+// @media only screen
+//   and (min-width: 768px)
+//   and (max-width: 991px) {
+//     .sub-heading {
+//       font-size: 20px;
+//     }
+// }
 
 .headline-tags {
-  margin: 0 auto;
+  // margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
