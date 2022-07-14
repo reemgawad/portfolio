@@ -41,22 +41,12 @@ h1, h2 {
 
 .home-heading-container {
   height: calc(100vh - 49.5px);
-  width: 45vw;
   display: flex;
   align-items: center;
-}
-
-.showcase-container {
-  height: calc(100vh - 49.5px);
-  width: 65vw;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .work-container {
   height: 600px;
   overflow-y: scroll;
-  width: 65vw;
   padding-bottom: 50px;
 }
