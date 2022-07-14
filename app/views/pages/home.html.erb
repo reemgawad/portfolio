@@ -1,44 +1,60 @@
-<div class="d-flex justify-content-between">
-  <div class="home-heading-container">
-    <div class="headline-tags">
-      <h1 class="main-heading">Hi, I'm <span class="hover-underline-animation">Reem</span></h1>
-      <br>
-      <h2 style="margin-left: 110px"> a software developer.</h2>
-      <br>
-      <p style="margin-left: 100px">Here is some of my work!</p>
-    </div>
-  </div>
+<div class="container">
+  <div class="row">
 
-  <div>
-    <div class="showcase-container">
-      <div class="work-container">
-      <%= link_to brunchtime_path do %>
-        <div class="work-card brunchtime">
-          <div class="work-desc">
-            <p>WEB APP</p>
-          </div>
-        </div>
-      <% end %>
-      <%= link_to ruby_games_path do %>
-        <div class="work-card ruby-games">
-          <div class="work-desc">
-            <p>GAMES</p>
-            <h3>Ruby2D Games</h3>
-          </div>
-        </div>
-      <% end %>
-      <%= link_to "#" do %>
-        <div class="work-card sajil">
-          <div class="work-desc">
-            <p>WEB APP</p>
-            <h3>Sajil - coming soon</h3>
-            <div style="margin-top: 60px">
-              <%= image_tag "coming-soon.png", style: "width: 80px" %>
-              <%= image_tag "bot.png", style: "width: 80px" %>
+    <div class="col-12 col-lg-5 home-heading-container">
+      <div class="headline-tags">
+        <h1 class="main-heading">Hi, I'm <span class="hover-underline-animation">Reem</span></h1>
+        <br>
+        <h2 class="sub-heading"> a software developer.</h2>
+        <br>
+        <p class="action-p">Check out some of my work</p>
+        <%= image_tag "up-arrow.png", style: "width: 80px" %>
+      </div>
+    </div>
+
+    <div class="col-12 col-lg-7 d-flex justify-content-center align-items-center">
+      <%# <div class=""> %>
+        <div class="container work-container">
+          <div class="row justify-content-center">
+            <div class="col-10">
+              <%= link_to brunchtime_path do %>
+                <div class="work-card brunchtime">
+                  <div class="work-desc">
+                    <p>WEB APP</p>
+                  </div>
+                </div>
+              <% end %>
             </div>
           </div>
-        </div>
-      <% end %>
+           <div class="row justify-content-center">
+            <div class="col-10">
+              <%= link_to ruby_games_path do %>
+                <div class="work-card ruby-games">
+                  <div class="work-desc">
+                    <p>GAMES</p>
+                    <h3>Ruby2D Games</h3>
+                  </div>
+                </div>
+              <% end %>
+            </div>
+          </div>
+           <div class="row justify-content-center">
+            <div class="col-10">
+              <%= link_to "#" do %>
+                <div class="work-card sajil">
+                  <div class="work-desc">
+                    <p>WEB APP</p>
+                    <h3>Sajil - coming soon</h3>
+                    <div style="margin-top: 60px">
+                      <%= image_tag "coming-soon.png", style: "width: 80px" %>
+                      <%= image_tag "bot.png", style: "width: 80px" %>
+                    </div>
+                  </div>
+                </div>
+              <% end %>
+            </div>
+          </div>
+        <%# </div> %>
       </div>
     </div>
   </div>
