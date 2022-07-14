@@ -5,6 +5,7 @@
 // If the screen size is 767px wide or less, rotate img
 @media screen and (max-width: 767px) {
   .arrow-icon {
-    transform: rotate(90deg);
+    transform: rotate(70deg);
+    align-self: flex-end;
   }
 }
