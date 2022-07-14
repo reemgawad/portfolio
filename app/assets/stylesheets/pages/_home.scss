@@ -19,17 +19,48 @@ h1, h2 {
   font-size: 65px;
 }
 
-// if screen size is between 1200px and 992px, set font size to 55px
+.sub-heading {
+  font-size: 32px;
+}
+
+// if screen size is between 1399px and 991px, set mainheading to 50px
 @media only screen
-  and (min-width: 992px)
-  and (max-width: 1200px) {
+  and (min-width: 991px)
+  and (max-width: 1399px) {
     .main-heading {
-      font-size: 55px;
+      font-size: 50px;
     }
 }
 
+// if screen size is between 991px and 768px, set mainheading to 45px
+@media only screen
+  and (min-width: 768px)
+  and (max-width: 991px) {
+    .main-heading {
+      font-size: 45px;
+    }
+}
+
+// if screen size is between 1399px and 991px, set subheading to 50px
+@media only screen
+  and (min-width: 768px)
+  and (max-width: 1399px) {
+    .sub-heading {
+      font-size: 25px;
+    }
+}
+
+// if screen size is between 991px and 768px, set subheading to 45px
+// @media only screen
+//   and (min-width: 768px)
+//   and (max-width: 991px) {
+//     .sub-heading {
+//       font-size: 20px;
+//     }
+// }
+
 .headline-tags {
-  margin: 0 auto;
+  // margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
