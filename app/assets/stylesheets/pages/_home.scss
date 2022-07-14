@@ -30,6 +30,9 @@ h1, h2 {
     .main-heading {
       font-size: 50px;
     }
+    .sub-heading {
+      font-size: 25px;
+    }
 }
 
 // if screen size is between 991px and 768px
@@ -62,6 +65,7 @@ h1, h2 {
 @media screen and (max-width: 767px) {
   .home-heading-container {
     height:auto;
+    margin-top: 50px;
   }
 }
 
