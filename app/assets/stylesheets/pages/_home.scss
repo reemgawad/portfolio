@@ -47,6 +47,15 @@ h1, h2 {
     }
 }
 
+@media screen and (max-width: 450px) {
+  .main-heading {
+    font-size: 45px;
+  }
+  .sub-heading {
+    font-size: 25px;
+  }
+}
+
 .headline-tags {
   // margin: 0 auto;
   display: flex;
