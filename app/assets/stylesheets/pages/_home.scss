@@ -15,21 +15,17 @@ h1, h2 {
   font-family: "Source Serif Pro", "serif";
 }
 
-// h2 {
-//   font-family: 'Poppins', "sans-serif";
-//   font-weight: 300;
-// }
-
 .main-heading {
-  font-size: 4.2vw;
+  font-size: 65px;
 }
 
-.sub-heading {
-  font-size: 2.2vw;
-}
-
-.action-p {
-  font-size: 1.1vw;
+// if screen size is between 1200px and 992px, set font size to 55px
+@media only screen
+  and (min-width: 992px)
+  and (max-width: 1200px) {
+    .main-heading {
+      font-size: 55px;
+    }
 }
 
 .headline-tags {
