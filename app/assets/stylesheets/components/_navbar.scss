@@ -11,6 +11,15 @@
   width: 30px;
 }
 
+
+.navbar-brand img {
+  transition: transform .6s ease-in-out;
+
+  &:hover {
+    transform: rotate(360deg);
+  }
+}
+
 .nav-link {
   color: $dark-blue !important;
 
