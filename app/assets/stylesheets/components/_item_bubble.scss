@@ -1,5 +1,6 @@
 .item-bubble {
-  background-color: $lighter-blue;
+  // background-color: $lighter-blue;
+  background-image: linear-gradient(135deg, $lighter-blue, $light-orange, $burnt-orange);
   border-radius: 20px;
   padding: 1.5em;
   width: 184px;
@@ -7,3 +8,8 @@
   margin: 10px;
   color: $dark-blue;
 }
+
+// .item-bubble-container {
+//   background-image: linear-gradient(135deg, $light-orange, $lighter-blue, $burnt-orange);
+//   border-radius: 20px;
+// }
