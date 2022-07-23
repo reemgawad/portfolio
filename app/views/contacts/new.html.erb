@@ -1,0 +1,16 @@
+<div class="container">
+  <h2 class="mt-5">Get In Touch</h2>
+  <%= simple_form_for @contact do |f| %>
+    <div class="col-md-6">
+      <%= f.input  :name, required: true, class: "contact-form-text-area" %>
+      <%= f.input :email, as: :email, required: true, class: "contact-form-text-area" %>
+      <%= f.input :message, as: :text, required: true, class: "contact-form-text-area",
+            placeholder: "Send me a message"%>
+      <div class= "d-none">
+        <%= f.label :nickname %>
+        <%= f.text_field :nickname, :hint => 'Leave this field blank!' %>
+      </div>
+      <%= f.submit 'Send Message', class: 'btn btn-primary' %>
+    </div>
+  <% end %>
+</div>
