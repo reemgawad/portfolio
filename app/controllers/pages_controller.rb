@@ -12,4 +12,7 @@ class PagesController < ApplicationController
 
   def ruby_games
   end
+
+  def contact
+  end
 end
