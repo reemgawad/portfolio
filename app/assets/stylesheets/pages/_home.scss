@@ -28,28 +28,28 @@ p {
 }
 
 // if screen size is between 1399px and 991px, set mainheading to 50px
-@media only screen
-  and (min-width: 991px)
-  and (max-width: 1399px) {
-    .main-heading {
-      font-size: 50px;
-    }
-    .sub-heading {
-      font-size: 25px;
-    }
-}
+// @media only screen
+//   and (min-width: 991px)
+//   and (max-width: 1399px) {
+//     .main-heading {
+//       font-size: 50px;
+//     }
+//     .sub-heading {
+//       font-size: 25px;
+//     }
+// }
 
-// if screen size is between 991px and 768px
-@media only screen
-  and (min-width: 768px)
-  and (max-width: 991px) {
-    .main-heading {
-      font-size: 45px;
-    }
-    .sub-heading {
-      font-size: 25px;
-    }
-}
+// // if screen size is between 991px and 768px
+// @media only screen
+//   and (min-width: 768px)
+//   and (max-width: 991px) {
+//     .main-heading {
+//       font-size: 45px;
+//     }
+//     .sub-heading {
+//       font-size: 25px;
+//     }
+// }
 
 @media screen and (max-width: 450px) {
   .main-heading {
@@ -61,14 +61,14 @@ p {
 }
 
 .headline-tags {
-  // margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
 }
 
 .home-heading-container {
-  height: calc(100vh - 49.5px);
+  // height: calc(100vh - 49.5px);
+  height: 60vh;
   display: flex;
   align-items: center;
   justify-content: center;
