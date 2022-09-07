@@ -74,11 +74,6 @@ p {
   justify-content: center;
 }
 
-.work-container {
-  height: 600px;
-  overflow-y: scroll;
-  padding-bottom: 50px;
-}
 
 // If the screen size is 767px wide or less, reduce height + remove scroll
 @media screen and (max-width: 767px) {
