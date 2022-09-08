@@ -1,33 +1,22 @@
-<div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
+<div class="navbar navbar-expand-sm navbar-light navbar-lewagon px-5 py-3">
   <div class="container-fluid">
+
+    <%= link_to root_path, class: "navbar-brand spin" do %>
+      <%= image_tag "logo.png" %>
+    <% end %>
 
     <div id="navbarSupportedContent">
       <ul class="navbar-nav me-auto">
           <li class="nav-item">
-            <%= link_to "Work", "#", class: "nav-link hover-underline ms-3" %>
+            <%= link_to "Work", "#", class: "nav-link hover-underline ms-4" %>
           </li>
           <li class="nav-item">
-            <%= link_to "About", "#", class: "nav-link hover-underline ms-3" %>
+            <%= link_to "About", "#", class: "nav-link hover-underline ms-4" %>
           </li>
           <li class="nav-item">
-            <%= link_to "Contact", "mailto:reemabdelg@gmail.com", class: "nav-link hover-underline ms-3" %>
+            <%= link_to "Contact", "mailto:reemabdelg@gmail.com", class: "nav-link hover-underline ms-4" %>
           </li>
       </ul>
     </div>
-
-      <%= link_to root_path, class: "navbar-brand spin" do %>
-        <%= image_tag "logo.png" %>
-      <% end %>
-
-    <div>
-      <%= link_to "https://github.com/reemgawad", class: "navbar-brand", target: "_blank" do %>
-        <%= image_tag "github.png" %>
-      <% end %>
-
-       <%= link_to "https://www.linkedin.com/in/reemgawad", class: "navbar-brand ps-3", target: "_blank" do %>
-        <%= image_tag "linkedin.png" %>
-      <% end %>
-    </div>
-
   </div>
 </div>
