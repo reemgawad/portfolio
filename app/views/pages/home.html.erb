@@ -1,61 +1,89 @@
 <div class="container">
-  <div class="row">
 
-    <div class="col-12 col-md-3 col-lg-4 home-heading-container">
-      <div class="headline-tags">
+  <div class="home-heading-container">
+    <div class="row">
+      <div class="headline-tags col-12 col-md-6">
         <h1 class="main-heading">Hi, I'm <span class="hover-underline">Reem</span></h1>
         <br>
-        <h2 class="sub-heading"> a software developer.</h2>
+        <h2 class="sub-heading"> a fullstack developer.</h2>
         <br>
-        <p class="action-p">Check out some of my work</p>
-        <%= image_tag "arrow.png", class: "arrow-icon" %>
+        <div>
+          <p class="action-p">Check out some of my work</p>
+          <%= image_tag "arrow.png", class: "arrow-icon" %>
+        </div>
       </div>
-    </div>
-
-    <div class="col-12 col-md-9 col-lg-8 d-flex justify-content-center align-items-center">
-      <%# <div class=""> %>
-        <div class="container work-container">
-          <div class="row justify-content-center">
-            <div class="col-sm-12 col-md-10">
-              <%= link_to "https://www.brunchtime.live/", target: "_blank" do %>
-                <div class="work-card brunchtime">
-                  <div class="work-desc">
-                    <p>WEB APP</p>
-                  </div>
-                </div>
-              <% end %>
-            </div>
-          </div>
-           <div class="row justify-content-center">
-            <div class="col-sm-12 col-md-10">
-              <%= link_to "https://github.com/reemgawad/ruby2d-games/tree/master/01-snake", target: "_blank" do %>
-                <div class="work-card ruby-games">
-                  <div class="work-desc">
-                    <p>GAMES</p>
-                    <h3>Ruby2D Games</h3>
-                  </div>
-                </div>
-              <% end %>
-            </div>
-          </div>
-           <div class="row justify-content-center">
-            <div class="col-sm-12 col-md-10">
-              <%= link_to "#" do %>
-                <div class="work-card sajil">
-                  <div class="work-desc">
-                    <p>WEB APP</p>
-                    <h3>Sajil - coming soon</h3>
-                    <div style="margin-top: 60px">
-                      <%= image_tag "coming-soon.png", style: "width: 80px" %>
-                      <%= image_tag "bot.png", style: "width: 80px" %>
-                    </div>
-                  </div>
-                </div>
-              <% end %>
-            </div>
-          </div>
-        <%# </div> %>
+      <div class="col-12 col-md-6 text-center">
+        <%= image_tag "reem-pic.png", class: "avatar" %>
       </div>
     </div>
   </div>
+
+  <!-- Portfolio showcase section -->
+  <!-- 2x2 col-6 col-6 then col-12 on md/sm -->
+
+  <div class="d-flex justify-content-center align-items-center">
+    <div class="container work-container">
+      <div class="row justify-content-center">
+        <div class="col-12 col-lg-6">
+          <%= link_to "https://www.brunchtime.live/", target: "_blank" do %>
+            <div class="work-card brunchtime">
+              <div class="work-desc">
+                <p>WEB APP</p>
+              </div>
+              <%# <div class="badge">Ruby on Rails</div> %>
+              <%# <div class="badge">Javascript</div> %>
+            </div>
+          <% end %>
+        </div>
+        <div class="col-12 col-lg-6">
+          <%= link_to "https://github.com/reemgawad/ruby2d-games/tree/master/01-snake", target: "_blank" do %>
+            <div class="work-card ruby-games">
+              <div class="work-desc">
+                <p>GAMES</p>
+                <h3>Ruby2D Games</h3>
+              </div>
+            </div>
+          <% end %>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-12 col-lg-6">
+          <%= link_to "#" do %>
+            <div class="work-card sajil">
+              <div class="work-desc">
+                <p>WEB APP</p>
+                <h3>Arood - coming soon</h3>
+                <div style="margin-top: 60px">
+                  <%= image_tag "coming-soon.png", style: "width: 80px" %>
+                  <%= image_tag "bot.png", style: "width: 80px" %>
+                </div>
+              </div>
+            </div>
+          <% end %>
+        </div>
+        <div class="col-12 col-lg-6 d-none"> <!-- Remove d-none class when card is ready -->
+          <%= link_to "#" do %>
+            <div class="work-card">
+              <div class="work-desc">
+                <p>WEB APP</p>
+                <h3>coming soon</h3>
+                <div style="margin-top: 60px">
+                </div>
+              </div>
+            </div>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mini desc + skills section -->
+  <!-- The 2 sub-sections will be col-6 col-6 / then col-12 on mobile-->
+  <div class="about-container">
+    <div class="row">
+      <div class="col-12 col-lg-6"></div>
+      <div class="col-12 col-lg-6"></div>
+    </div>
+  </div>
+
 </div>

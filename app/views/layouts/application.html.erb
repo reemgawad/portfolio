@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Reem Gawad | Software Developer</title>
+    <title>Reem Gawad | Fullstack Developer</title>
     <%= favicon_link_tag %>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
@@ -16,13 +16,13 @@
   <body>
     <%= render 'shared/navbar' %>
     <%= render 'shared/flashes' %>
-    <div class="container">
+    <!--<div class="container">
       <br>
       <% flash.each do |key, message| %>
         <p class="alert alert-<%= key %>"><%= message %></p>
       <% end %>
-    </div>
-
+    </div>-->
     <%= yield %>
+    <%= render 'shared/footer' %>
   </body>
 </html>

@@ -1,11 +1,6 @@
 .arrow-icon {
   width: 80px;
-  transform: rotate(90deg)
-}
-
-// If the screen size is 767px wide or less, rotate img
-@media screen and (max-width: 767px) {
-  .arrow-icon {
-    transform: rotate(160deg);
-  }
+  transform: rotate(150deg);
+  position: relative;
+  left: 75px;
 }
