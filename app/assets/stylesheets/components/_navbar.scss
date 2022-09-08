@@ -42,13 +42,6 @@
   margin-top: 0; // remove the gap so it doesn't close
 }
 
-// if screen is 575px or less, "work" page option is hidden
-@media screen and (max-width: 575px) {
-  .work-dropdown {
-    display: none;
-  }
-}
-
 .dropdown-item:hover {
   background-color: $lighter-blue !important;
   color: $bright-orange;

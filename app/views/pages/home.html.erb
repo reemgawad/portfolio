@@ -1,13 +1,20 @@
 <div class="container">
 
   <div class="home-heading-container">
-    <div class="headline-tags">
-      <h1 class="main-heading">Hi, I'm <span class="hover-underline">Reem</span></h1>
-      <br>
-      <h2 class="sub-heading"> a fullstack developer.</h2>
-      <br>
-      <p class="action-p">Check out some of my work</p>
-      <%= image_tag "arrow.png", class: "arrow-icon" %>
+    <div class="row">
+      <div class="headline-tags col-12 col-md-6">
+        <h1 class="main-heading">Hi, I'm <span class="hover-underline">Reem</span></h1>
+        <br>
+        <h2 class="sub-heading"> a fullstack developer.</h2>
+        <br>
+        <div>
+          <p class="action-p">Check out some of my work</p>
+          <%= image_tag "arrow.png", class: "arrow-icon" %>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 text-center">
+        <%= image_tag "reem-pic.png", class: "avatar" %>
+      </div>
     </div>
   </div>
 

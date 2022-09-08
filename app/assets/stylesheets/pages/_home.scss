@@ -27,39 +27,6 @@ p {
   font-size: 32px;
 }
 
-// if screen size is between 1399px and 991px, set mainheading to 50px
-// @media only screen
-//   and (min-width: 991px)
-//   and (max-width: 1399px) {
-//     .main-heading {
-//       font-size: 50px;
-//     }
-//     .sub-heading {
-//       font-size: 25px;
-//     }
-// }
-
-// // if screen size is between 991px and 768px
-// @media only screen
-//   and (min-width: 768px)
-//   and (max-width: 991px) {
-//     .main-heading {
-//       font-size: 45px;
-//     }
-//     .sub-heading {
-//       font-size: 25px;
-//     }
-// }
-
-@media screen and (max-width: 450px) {
-  .main-heading {
-    font-size: 45px;
-  }
-  .sub-heading {
-    font-size: 25px;
-  }
-}
-
 .headline-tags {
   display: flex;
   flex-direction: column;
@@ -72,16 +39,4 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-
-// If the screen size is 767px wide or less, reduce height + remove scroll
-@media screen and (max-width: 767px) {
-  .home-heading-container {
-    height:auto;
-    margin-top: 50px;
-  }
-  .work-container {
-    overflow-y: visible;
-  }
 }
