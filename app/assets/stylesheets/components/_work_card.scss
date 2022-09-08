@@ -9,6 +9,13 @@
   //   transform: translate3d(0,-5px,0);
   //   box-shadow: 0 40px 74px -3px rgba(238, 130, 116, 0.25);
   // }
+
+  h3 {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    color: $burnt-orange;
+  }
 }
 
 .work-img-div {
@@ -32,10 +39,6 @@
     color: $light-blue;
   }
 
-  h3 {
-    margin-bottom: 0;
-    color: $burnt-orange;
-  }
 }
 
 .brunchtime {
