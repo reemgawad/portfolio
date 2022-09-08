@@ -18,15 +18,16 @@
     </div>
   </div>
 
-  <!-- Portfolio showcase section -->
+  <!-- Portfolio section -->
   <!-- 2x2 col-6 col-6 then col-12 on md/sm -->
 
   <div class="d-flex justify-content-center align-items-center">
-    <div class="container work-container">
+    <div class="container pb-5">
       <div class="row justify-content-center">
         <div class="col-12 col-lg-6">
           <%= link_to "https://www.brunchtime.live/", target: "_blank" do %>
-            <div class="work-card brunchtime">
+            <div class="work-card">
+              <div class="work-img-div brunchtime"></div>
               <div class="work-desc">
                 <p>WEB APP</p>
               </div>
@@ -37,10 +38,11 @@
         </div>
         <div class="col-12 col-lg-6">
           <%= link_to "https://github.com/reemgawad/ruby2d-games/tree/master/01-snake", target: "_blank" do %>
-            <div class="work-card ruby-games">
+            <div class="work-card">
+              <div class="work-img-div ruby-games"></div>
               <div class="work-desc">
-                <p>GAMES</p>
-                <h3>Ruby2D Games</h3>
+                <h3>Snake Game</h3>
+                <p>GAME</p>
               </div>
             </div>
           <% end %>
@@ -49,11 +51,12 @@
       <div class="row justify-content-center">
         <div class="col-12 col-lg-6">
           <%= link_to "#" do %>
-            <div class="work-card sajil">
-              <div class="work-desc">
-                <p>WEB APP</p>
+            <div class="work-card">
+              <div class="work-img-div sajil"></div>
+              <div class="work-desc" style="position: absolute; top: 40px">
+                <%# <p>WEB APP</p> %>
                 <h3>Arood - coming soon</h3>
-                <div style="margin-top: 60px">
+                <div style="margin-top: 60px;">
                   <%= image_tag "coming-soon.png", style: "width: 80px" %>
                   <%= image_tag "bot.png", style: "width: 80px" %>
                 </div>
@@ -67,8 +70,6 @@
               <div class="work-desc">
                 <p>WEB APP</p>
                 <h3>coming soon</h3>
-                <div style="margin-top: 60px">
-                </div>
               </div>
             </div>
           <% end %>

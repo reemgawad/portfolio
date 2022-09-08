@@ -1,7 +1,3 @@
-.work-container {
-  padding-bottom: 50px;
-}
-
 .work-card {
   height: 400px;
   margin: 30px auto;
@@ -9,15 +5,22 @@
   position: relative;
   transition: all .3s ease-in-out;
 
-  &:hover {
-    transform: translate3d(0,-5px,0);
-    box-shadow: 0 40px 74px -3px rgba(238, 130, 116, 0.25);
-  }
+  // &:hover {
+  //   transform: translate3d(0,-5px,0);
+  //   box-shadow: 0 40px 74px -3px rgba(238, 130, 116, 0.25);
+  // }
+}
+
+.work-img-div {
+  height: 90%;
+  border-radius: 15px;
+  margin: 0 auto;
+  // display: block;
 }
 
 .work-desc {
   position: absolute;
-  right: 20px;
+  left: 45px;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -25,7 +28,7 @@
 
   p {
     font-size: 12px;
-    margin: 12px 0;
+    margin: 5px 0;
     color: $light-blue;
   }
 
