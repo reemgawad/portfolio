@@ -33,7 +33,7 @@
 }
 
 
-.work-desc-links {
+.work-tags-links {
   display: flex;
   align-items: center;
 
@@ -50,6 +50,13 @@
 
 }
 
+.work-desc {
+  p {
+    padding: 0 24px;
+    text-align: center;
+    justify-content: baseline;
+  }
+}
 
 .brunchtime {
   background-image: url("brunchtime-homepg.png");
