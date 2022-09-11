@@ -22,23 +22,32 @@
   height: 90%;
   border-radius: 15px;
   margin: 0 auto;
-  // display: block;
 }
 
 .work-desc {
-  position: absolute;
-  left: 45px;
   display: flex;
   justify-content: space-between;
-  padding: 0;
+  padding: 0 12px;
+}
 
-  p {
-    font-size: 12px;
-    margin: 5px 0;
-    color: $light-blue;
+
+.work-desc-links {
+  display: flex;
+  align-items: center;
+
+  a {
+  color: $dark-blue;
+  font-size: 20px;
+  padding: 10px;
+
+    &:hover {
+      color: $light-blue;
+      transition: 0.5s;
+    }
   }
 
 }
+
 
 .brunchtime {
   background-image: url("brunchtime-homepg.png");
@@ -52,6 +61,6 @@
   background-repeat: no-repeat;
 }
 
-.sajil {
+.arood {
   background-color: $lighter-blue;
 }
