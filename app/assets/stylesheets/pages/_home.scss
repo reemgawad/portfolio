@@ -34,10 +34,11 @@ p {
 }
 
 .home-heading-container {
-  height: calc(100vh - 86px); // minus height of navbar
+  height: calc(50vh); // minus height of navbar
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
+  background-color: $light-orange;
 }
 
 // If the screen size is 767px wide or less, reduce height
@@ -47,3 +48,5 @@ p {
     margin-top: 50px;
   }
 }
+
+// #FAD9D0

@@ -1,6 +1,6 @@
 .work-card {
-  height: 500px;
-  margin: 0px 10px 100px;
+  height: 600px;
+  margin: 0px 10px 80px;
   border-radius: 15px;
   position: relative;
   transition: all .3s ease-in-out;
@@ -20,13 +20,13 @@
 }
 
 .work-img-div {
-  height: 90%;
+  height: 70%;
   border-radius: 15px;
   margin: 0 auto;
   box-shadow: 0 8px 30px 3px rgba(238, 130, 116, 0.25);
 }
 
-.work-desc {
+.work-tags {
   display: flex;
   justify-content: space-between;
   padding: 0 12px;
@@ -39,7 +39,7 @@
 
   a {
   color: $dark-blue;
-  font-size: 24px;
+  font-size: 28px;
   padding: 10px;
 
     &:hover {
