@@ -20,11 +20,11 @@ p {
 }
 
 .main-heading {
-  font-size: 65px;
+  font-size: 75px;
 }
 
 .sub-heading {
-  font-size: 32px;
+  font-size: 38px;
 }
 
 .headline-tags {
@@ -34,11 +34,11 @@ p {
 }
 
 .home-heading-container {
-  // height: calc(100vh - 49.5px);
-  height: 60vh;
+  height: calc(50vh); // minus height of navbar
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
+  background-color: $light-orange;
 }
 
 // If the screen size is 767px wide or less, reduce height
@@ -48,3 +48,5 @@ p {
     margin-top: 50px;
   }
 }
+
+// #FAD9D0
