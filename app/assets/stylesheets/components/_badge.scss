@@ -1,8 +1,14 @@
+.work-tags {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 12px;
+}
+
 .work-skills {
   display: flex;
   justify-content: space-between;
   list-style: none;
-  padding: 0 8px;
+  padding: 12px 8px 0;
   margin-bottom: 0;
 
   li {
