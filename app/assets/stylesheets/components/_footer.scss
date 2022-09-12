@@ -16,6 +16,10 @@
   text-decoration: none;
   font-size: 30px;
   padding: 0px 10px;
+  transition: all .3s ease-in-out;
+  &:hover {
+    transform: translate3d(0,-5px,0);
+  }
 }
 .footer-links a:hover {
   opacity: 1;
