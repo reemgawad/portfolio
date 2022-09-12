@@ -1,3 +1,4 @@
+<!-- Banner/Header-->
 <div class="home-heading-container">
   <div class="row">
     <div class="headline-tags col-12 col-md-6">
@@ -15,7 +16,8 @@
     </div>
   </div>
 </div>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fef5ee" fill-opacity="1" d="M0,32L48,48C96,64,192,96,288,138.7C384,181,480,235,576,261.3C672,288,768,288,864,266.7C960,245,1056,203,1152,197.3C1248,192,1344,224,1392,240L1440,256L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
+<!-- Wave SVG-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#F8EAE1" fill-opacity="1" d="M0,32L48,48C96,64,192,96,288,138.7C384,181,480,235,576,261.3C672,288,768,288,864,266.7C960,245,1056,203,1152,197.3C1248,192,1344,224,1392,240L1440,256L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
 
 <!-- Portfolio section -->
 <!-- 2x2 col-6 col-6 then col-12 on md/sm -->
@@ -33,10 +35,13 @@
               <li>Javascript</li>
               <li>PostgreSQL</li>
             </ul>
-            <div class="work-desc-links">
-              <a href="https://github.com/reemgawad/brunchtime"><i class="fab fa-github"></i></a>
-              <a href="https://www.brunchtime.live"><i class="fas fa-external-link-alt"></i></a>
+            <div class="work-tags-links">
+              <a href="https://github.com/reemgawad/brunchtime" target="_blank"><i class="fab fa-github"></i></a>
+              <a href="https://www.brunchtime.live" target="_blank"><i class="fas fa-external-link-alt"></i></a>
             </div>
+          </div>
+          <div class="work-desc">
+            <p>Rails prototype for finding the brunch spots with the shortest wait-times. Filter through restaurants by wait-time, get directions, and rate the wait-time accuracy.</p>
           </div>
         </div>
       </div>
@@ -49,9 +54,12 @@
               <li>Ruby</li>
               <li>Ruby2D</li>
             </ul>
-            <div class="work-desc-links">
-              <a href="https://github.com/reemgawad/ruby2d-games/tree/master/01-snake"><i class="fab fa-github"></i></a>
+            <div class="work-tags-links">
+              <a href="https://github.com/reemgawad/ruby2d-games/tree/master/01-snake" target="_blank"><i class="fab fa-github"></i></a>
             </div>
+          </div>
+          <div class="work-desc">
+            <p>Classic snake game created in Ruby with the <%= link_to "Ruby2D", "https://www.ruby2d.com/", target: "_blank" %> framework. Use the arrow keys to move the snake & gather points as you feed it.</p>
           </div>
         </div>
       </div>
@@ -85,7 +93,7 @@
   </div>
 </div>
 
-<!-- Mini desc + skills section -->
+<!-- Mini about + skills section -->
 <!-- The 2 sub-sections will be col-6 col-6 / then col-12 on mobile-->
 <div class="container about-container" id="about">
   <div class="row">
@@ -94,7 +102,7 @@
       <div class="about">
         <p>I am a fullstack developer based in Montréal, with expertise in building Ruby on Rails applications. I have a past life in Finance and enjoy problem-solving and putting my analytical skills to use.</p>
         <br>
-        <p>In my spare time you’ll find me making ceramics, trying new recipes in the kitchen, and dabbling with film photography.</p>
+        <p>In my spare time you’ll find me making ceramics, experimenting with new recipes, and dabbling with film photography.</p>
         <br>
         <div class="footer-links">
           <a href="https://github.com/reemgawad"><i class="fab fa-github"></i></a>
@@ -135,7 +143,7 @@
           <h4>HTML</h4>
         </div>
         <div class="skill-tag">
-          <i class="fa fa-css3"></i>
+          <i class="fa-brands fa-css3-alt"></i>
           <h4>CSS</h4>
         </div>
         <div class="skill-tag">
@@ -159,6 +167,39 @@
           <h4>Git</h4>
         </div>
       </div>
+    </div>
+  </div>
+</div>
+
+<!-- Contact section -->
+<div class="container" id="contact">
+  <div class="row">
+    <div class="col-12 col-lg-6">
+      <div class="contact-container">
+        <h2>Get in touch</h2>
+        <br>
+        <p>Have a question for me, or just want to say hello? Fill out the form and I'll be happy to get back to you!</p>
+        <br>
+        <p>Or find me here...</p>
+        <div class="footer-links">
+          <a href="https://github.com/reemgawad"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/reemgawad/"><i class="fab fa-linkedin"></i></a>
+          <a href="https://twitter.com/gwdreem"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-lg-6">
+      <%= simple_form_for @contact do |f| %>
+        <%= f.input  :name, required: true, class: "contact-form-text-area" %>
+        <%= f.input :email, as: :email, required: true, class: "contact-form-text-area" %>
+        <%= f.input :message, as: :text, required: true, class: "contact-form-text-area",
+              placeholder: "Write your message..."%>
+        <div class= "d-none">
+          <%= f.label :nickname %>
+          <%= f.text_field :nickname, :hint => 'Leave this field blank!' %>
+        </div>
+        <%= f.submit 'Send Message', class: 'button' %>
+      <% end %>
     </div>
   </div>
 </div>

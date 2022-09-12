@@ -12,7 +12,7 @@ p, h1, h2 {
 }
 
 h1, h2 {
-  font-family: "Source Serif Pro", "serif";
+  font-family: $h1-font;
 }
 
 p {
@@ -20,11 +20,11 @@ p {
 }
 
 .main-heading {
-  font-size: 75px;
+  font-size: 79px;
 }
 
 .sub-heading {
-  font-size: 38px;
+  font-size: 40px;
 }
 
 .headline-tags {
@@ -34,19 +34,41 @@ p {
 }
 
 .home-heading-container {
-  height: calc(50vh); // minus height of navbar
+  height: 50vh;
   display: flex;
   align-items: flex-end;
   justify-content: center;
   background-color: $light-orange;
 }
 
+.contact-container {
+  border-radius: 15px;
+  height: 350px;
+  background-color: $lighter-blue;
+  box-shadow: 0 8px 30px 3px rgba(238, 130, 116, 0.25);
+  text-align: center;
+  margin-right: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  p {
+    opacity: 0.7;
+  }
+}
+
+#contact {
+  margin: 200px auto !important;
+}
+
+
+
 // If the screen size is 767px wide or less, reduce height
 @media screen and (max-width: 767px) {
   .home-heading-container {
     height: auto;
-    margin-top: 50px;
+    // margin-top: 50px;
   }
 }
-
-// #FAD9D0

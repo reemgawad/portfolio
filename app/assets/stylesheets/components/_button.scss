@@ -1,0 +1,13 @@
+.button {
+  text-decoration: none;
+  color: $light-yellow;
+  background-color: $burnt-orange;
+  border-radius: 15px;
+  border: none;
+  padding: 10px;
+  transition: all .3s ease-in-out;
+
+  &:hover {
+    background-color: #ff8677;
+  }
+}

@@ -26,14 +26,8 @@
   box-shadow: 0 8px 30px 3px rgba(238, 130, 116, 0.25);
 }
 
-.work-tags {
-  display: flex;
-  justify-content: space-between;
-  padding: 0 12px;
-}
 
-
-.work-desc-links {
+.work-tags-links {
   display: flex;
   align-items: center;
 
@@ -44,12 +38,30 @@
 
     &:hover {
       color: $light-blue;
-      transition: 0.5s;
+      transition: all .3s ease-in-out;
+      &:hover {
+        transform: translate3d(0,-5px,0);
+      }
     }
   }
 
 }
 
+.work-desc {
+  p {
+    padding: 0 40px;
+    text-align: center;
+    justify-content: baseline;
+  }
+
+  a {
+    color: $dark-blue;
+
+    &:hover {
+      color: $lighter-blue
+    }
+  }
+}
 
 .brunchtime {
   background-image: url("brunchtime-homepg.png");
