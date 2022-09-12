@@ -20,8 +20,5 @@ $h2-font: "Poppins", "Helvetica", "sans-serif";
 
 @font-face {
   font-family: "Bogart";
-  // src: font-url('Bogart-Medium-trial.eot');
-  src: font-url('Bogart-Regular-trial.ttf') format('truetype')
-//  font-url('Bogart-Medium-trial.eot?#iefix') format('embedded-opentype'),
-      //  font-url('Bogart-Medium-trial.woff') format('woff'),
+  src: font-url('Bogart-Regular-trial.ttf') format('truetype');
 }

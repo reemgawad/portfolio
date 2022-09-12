@@ -20,11 +20,11 @@ p {
 }
 
 .main-heading {
-  font-size: 75px;
+  font-size: 79px;
 }
 
 .sub-heading {
-  font-size: 38px;
+  font-size: 40px;
 }
 
 .headline-tags {
@@ -34,7 +34,7 @@ p {
 }
 
 .home-heading-container {
-  height: calc(50vh); // minus height of navbar
+  height: 50vh;
   display: flex;
   align-items: flex-end;
   justify-content: center;
@@ -48,5 +48,3 @@ p {
     // margin-top: 50px;
   }
 }
-
-// #FAD9D0
