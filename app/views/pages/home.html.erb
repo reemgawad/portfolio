@@ -185,9 +185,9 @@
     </div>
     <div class="col-12 col-lg-6">
       <%= simple_form_for @contact do |f| %>
-        <%= f.input  :name, required: true, class: "contact-form-text-area" %>
-        <%= f.input :email, as: :email, required: true, class: "contact-form-text-area" %>
-        <%= f.input :message, as: :text, required: true, class: "contact-form-text-area",
+        <%= f.input  :name, required: true %>
+        <%= f.input :email, as: :email, required: true %>
+        <%= f.input :message, as: :text, required: true,
               placeholder: "Write your message..."%>
         <div class= "d-none">
           <%= f.label :nickname %>

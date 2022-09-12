@@ -4,16 +4,4 @@ class PagesController < ApplicationController
   def home
     @contact = Contact.new
   end
-
-  def about
-  end
-
-  def brunchtime
-  end
-
-  def ruby_games
-  end
-
-  def contact
-  end
 end
