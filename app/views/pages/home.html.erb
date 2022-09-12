@@ -172,20 +172,34 @@
 </div>
 
 <!-- Contact section -->
-<div class="container text-center" id="contact">
-  <div class="contact-links">
-
-  </div>
-  <h2 class="mt-5">Get in touch</h2>
-    <%= simple_form_for @contact do |f| %>
-      <%= f.input  :name, required: true, class: "contact-form-text-area" %>
-      <%= f.input :email, as: :email, required: true, class: "contact-form-text-area" %>
-      <%= f.input :message, as: :text, required: true, class: "contact-form-text-area",
-            placeholder: "Write your message..."%>
-      <div class= "d-none">
-        <%= f.label :nickname %>
-        <%= f.text_field :nickname, :hint => 'Leave this field blank!' %>
+<div class="container" id="contact">
+  <div class="row">
+    <div class="col-12 col-lg-6">
+      <div class="contact-container">
+        <h2>Get in touch</h2>
+        <br>
+        <p>Have a question for me, or just want to say hello? Fill out the form and I'll be happy to get back to you!</p>
+        <br>
+        <p>Or find me here...</p>
+        <div class="footer-links">
+          <a href="https://github.com/reemgawad"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/reemgawad/"><i class="fab fa-linkedin"></i></a>
+          <a href="https://twitter.com/gwdreem"><i class="fab fa-twitter"></i></a>
+        </div>
       </div>
-      <%= f.submit 'Send Message', class: 'btn btn-primary' %>
-    <% end %>
+    </div>
+    <div class="col-12 col-lg-6">
+      <%= simple_form_for @contact do |f| %>
+        <%= f.input  :name, required: true, class: "contact-form-text-area" %>
+        <%= f.input :email, as: :email, required: true, class: "contact-form-text-area" %>
+        <%= f.input :message, as: :text, required: true, class: "contact-form-text-area",
+              placeholder: "Write your message..."%>
+        <div class= "d-none">
+          <%= f.label :nickname %>
+          <%= f.text_field :nickname, :hint => 'Leave this field blank!' %>
+        </div>
+        <%= f.submit 'Send Message', class: 'button' %>
+      <% end %>
+    </div>
+  </div>
 </div>

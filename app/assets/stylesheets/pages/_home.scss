@@ -41,8 +41,28 @@ p {
   background-color: $light-orange;
 }
 
-.contact-links {
+.contact-container {
+  border-radius: 15px;
+  height: 350px;
+  background-color: $lighter-blue;
+  box-shadow: 0 8px 30px 3px rgba(238, 130, 116, 0.25);
+  text-align: center;
+  margin-right: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  p {
+    opacity: 0.7;
+  }
 }
+
+#contact {
+  margin: 200px auto !important;
+}
+
 
 
 // If the screen size is 767px wide or less, reduce height
