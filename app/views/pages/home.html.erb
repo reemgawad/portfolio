@@ -143,7 +143,7 @@
           <h4>HTML</h4>
         </div>
         <div class="skill-tag">
-          <i class="fa fa-css3"></i>
+          <i class="fa-brands fa-css3-alt"></i>
           <h4>CSS</h4>
         </div>
         <div class="skill-tag">
@@ -173,5 +173,19 @@
 
 <!-- Contact section -->
 <div class="container text-center" id="contact">
-  <h2>Get in touch</h2>
+  <div class="contact-links">
+
+  </div>
+  <h2 class="mt-5">Get in touch</h2>
+    <%= simple_form_for @contact do |f| %>
+      <%= f.input  :name, required: true, class: "contact-form-text-area" %>
+      <%= f.input :email, as: :email, required: true, class: "contact-form-text-area" %>
+      <%= f.input :message, as: :text, required: true, class: "contact-form-text-area",
+            placeholder: "Write your message..."%>
+      <div class= "d-none">
+        <%= f.label :nickname %>
+        <%= f.text_field :nickname, :hint => 'Leave this field blank!' %>
+      </div>
+      <%= f.submit 'Send Message', class: 'btn btn-primary' %>
+    <% end %>
 </div>
