@@ -9,8 +9,8 @@ class ContactsController < ApplicationController
     if @contact.deliver
       flash.now[:success] = 'Message sent!'
     else
-      flash.now[:error] = 'Could not send message'
-      render :new
+      flash.now[:alert] = 'Please review the field(s) with error(s)'
+      render '/pages/home'
     end
   end
 
