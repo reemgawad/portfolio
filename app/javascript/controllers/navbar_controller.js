@@ -5,7 +5,7 @@ export default class extends Controller {
   static targets = ["navbar"]
 
   connect() {
-    console.log("hello");
+    // console.log("hello");
   }
 
 
