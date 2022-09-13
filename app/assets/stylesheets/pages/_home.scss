@@ -71,8 +71,40 @@ p {
 }
 
 // If the screen size is 767px wide or less, reduce height
-@media screen and (max-width: 767px) {
+@media(max-width: 767px) {
   .home-heading-container {
     height: auto;
+  }
+  .headline-tags {
+    align-items: center;
+    margin-top: 20px;
+  }
+  .avatar {
+    width: 35%;
+    box-shadow: none;
+  }
+  .reverse-headline {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+// If the screen size is 992 wide or less, reduce header & sub-header font size
+@media(max-width: 992px) {
+  .main-heading {
+    font-size: 65px;
+  }
+  .sub-heading {
+    font-size: 33px;
+  }
+}
+// If the screen size is 780px wide or less, reduce header & sub-header font size further
+
+@media(max-width: 780px) {
+  .main-heading {
+    font-size: 60px;
+  }
+  .sub-heading {
+    font-size: 30px;
   }
 }
