@@ -20,7 +20,7 @@ class ContactsController < ApplicationController
         format.html { redirect_to root_path }
         format.text { render partial: "contacts/thanks", formats: [:html] }
       else
-        format.text { render "pages/home", formats: [:html] }
+        format.text { render partial: "pages/form", locals: { contact: @contact }, formats: [:html] }
       end
     end
 
