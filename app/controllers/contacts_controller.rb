@@ -6,11 +6,14 @@ class ContactsController < ApplicationController
   def create
     @contact = Contact.new(contact_params)
     @contact.request = request
-    if @contact.deliver
-      flash.now[:success] = 'Message sent!'
-    else
-      flash.now[:error] = 'Could not send message'
-      render :new
+
+    respond_to do |format|
+      if @contact.deliver
+        format.html { redirect_to root_path }
+        format.text { render partial: "contacts/thanks", formats: [:html] }
+      else
+        format.text { render partial: "pages/form", locals: { contact: @contact }, formats: [:html] }
+      end
     end
   end
 

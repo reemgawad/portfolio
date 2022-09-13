@@ -103,7 +103,6 @@
         <p>I am a fullstack developer based in Montréal, with expertise in building Ruby on Rails applications. I have a past life in Finance and enjoy problem-solving and putting my analytical skills to use.</p>
         <br>
         <p>In my spare time you’ll find me making ceramics, experimenting with new recipes, and dabbling with film photography.</p>
-        <br>
       </div>
     </div>
 
@@ -183,18 +182,8 @@
         </div>
       </div>
     </div>
-    <div class="col-12 col-lg-6">
-      <%= simple_form_for @contact do |f| %>
-        <%= f.input  :name, required: true %>
-        <%= f.input :email, as: :email, required: true %>
-        <%= f.input :message, as: :text, required: true,
-              placeholder: "Write your message..."%>
-        <div class= "d-none">
-          <%= f.label :nickname %>
-          <%= f.text_field :nickname, :hint => 'Leave this field blank!' %>
-        </div>
-        <%= f.submit 'Send Message', class: 'button' %>
-      <% end %>
+    <div class="col-12 col-lg-6" data-controller="contact-form">
+      <%= render 'pages/form', contact: @contact %>
     </div>
   </div>
 </div>
