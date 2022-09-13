@@ -3,7 +3,7 @@ import { Controller } from "@hotwired/stimulus"
 // Connects to data-controller="contact-form"
 export default class extends Controller {
 
-  static targets = ["form"]
+  static targets = ["form", "thanks"]
 
   connect() {
     console.log("hello");
@@ -19,7 +19,7 @@ export default class extends Controller {
     })
       .then(response => response.text())
       .then((data) => {
-        console.log(data)
+        this.formTarget.outerHTML = data
       })
   }
 
