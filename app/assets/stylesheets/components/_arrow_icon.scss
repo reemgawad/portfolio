@@ -3,4 +3,9 @@
   transform: rotate(150deg);
   position: relative;
   left: 75px;
+  transition: all .3s ease-in-out;
+
+  &:hover {
+    transform: translate3d(0,-5px,0);
+  }
 }

@@ -1,4 +1,3 @@
-// Specific CSS for your home-page
 body {
   background-color: $light-yellow;
 }
@@ -41,6 +40,9 @@ p {
   background-color: $light-orange;
 }
 
+
+// CONTACT SECTION
+
 .contact-container {
   border-radius: 15px;
   height: 350px;
@@ -70,6 +72,28 @@ p {
   }
 }
 
+.contact-links {
+  display: flex;
+  align-items: center;
+}
+.contact-links a {
+  color: $light-yellow;
+  opacity: 0.8;
+  text-decoration: none;
+  font-size: 30px;
+  padding: 0px 10px;
+  transition: all .3s ease-in-out;
+  &:hover {
+    transform: translate3d(0,-5px,0);
+  }
+}
+.contact-links a:hover {
+  opacity: 1;
+}
+
+
+// MEDIA QUERIES
+
 // If the screen size is 767px wide or less, reduce height
 @media(max-width: 767px) {
   .home-heading-container {
@@ -86,6 +110,9 @@ p {
   .reverse-headline {
     display: flex;
     flex-direction: column-reverse;
+  }
+  .nav-link {
+    font-size: 14px;
   }
 }
 
