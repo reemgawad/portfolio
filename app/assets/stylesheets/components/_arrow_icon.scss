@@ -6,6 +6,7 @@
   transition: all .3s ease-in-out;
 
   &:hover {
+    transform: rotate(150deg);
     transform: translate3d(0,-5px,0);
   }
 }
