@@ -7,14 +7,6 @@ class ContactsController < ApplicationController
     @contact = Contact.new(contact_params)
     @contact.request = request
 
-    # if @contact.deliver
-    #   flash.now[:success] = 'Message sent!'
-    #   # render partial: 'thanks'
-    # else
-    #   flash.now[:alert] = 'Please review the field(s) with error(s)'
-    #   render 'pages/home'
-    # end
-
     respond_to do |format|
       if @contact.deliver
         format.html { redirect_to root_path }
@@ -23,7 +15,6 @@ class ContactsController < ApplicationController
         format.text { render partial: "pages/form", locals: { contact: @contact }, formats: [:html] }
       end
     end
-
   end
 
   private
