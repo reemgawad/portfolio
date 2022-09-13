@@ -183,23 +183,7 @@
       </div>
     </div>
     <div class="col-12 col-lg-6" data-controller="contact-form">
-      <%= simple_form_for @contact,
-        html: {
-          data: {
-            contact_form_target: "form",
-            action: "submit->contact-form#send"
-          }
-        } do |f| %>
-        <%= f.input  :name, required: true %>
-        <%= f.input :email, as: :email, required: true %>
-        <%= f.input :message, as: :text, required: true,
-              placeholder: "Write your message..."%>
-        <div class= "d-none">
-          <%= f.label :nickname %>
-          <%= f.text_field :nickname, :hint => 'Leave this field blank!' %>
-        </div>
-        <%= f.submit 'Send Message', class: 'button' %>
-      <% end %>
+      <%= render 'pages/form', contact: @contact %>
     </div>
   </div>
 </div>

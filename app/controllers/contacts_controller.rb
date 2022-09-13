@@ -19,6 +19,8 @@ class ContactsController < ApplicationController
       if @contact.deliver
         format.html { redirect_to root_path }
         format.text { render partial: "contacts/thanks", formats: [:html] }
+      else
+        format.text { render "pages/home", formats: [:html] }
       end
     end
 
