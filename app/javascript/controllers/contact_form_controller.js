@@ -9,11 +9,6 @@ export default class extends Controller {
     console.log("hello");
   }
 
-  displayForm() {
-    this.infosTarget.classList.add("d-none")
-    this.formTarget.classList.remove("d-none")
-  }
-
   send(event) {
     event.preventDefault()
     const url = this.formTarget.action
