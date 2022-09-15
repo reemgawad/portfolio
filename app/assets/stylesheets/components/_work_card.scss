@@ -27,6 +27,7 @@
 }
 
 
+
 .work-tags-links {
   display: flex;
   align-items: center;
@@ -39,13 +40,22 @@
     &:hover {
       color: $light-blue;
       transition: all .3s ease-in-out;
-      &:hover {
-        transform: translate3d(0,-5px,0);
-      }
+      transform: translate3d(0,-5px,0);
     }
   }
 
 }
+
+// If the screen size is 767px wide or less, reduce icon size
+@media(max-width: 767px) {
+  .work-tags-links a {
+    font-size: 20px;
+  }
+  .work-img-div {
+    height: 40%
+  }
+}
+
 
 .work-desc {
   p {
