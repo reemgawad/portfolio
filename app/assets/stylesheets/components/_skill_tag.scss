@@ -17,3 +17,9 @@
     font-size: 80px
   }
 }
+
+@media(max-width: 767px) {
+  .skill-table {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

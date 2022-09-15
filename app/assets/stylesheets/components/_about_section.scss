@@ -19,3 +19,8 @@
     color: $light-yellow;
   }
 }
+@media(max-width: 767px) {
+  .about {
+    margin-right: 0;
+  }
+}

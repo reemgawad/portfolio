@@ -14,11 +14,19 @@
   li {
     font-size: 14px;
     color: $dark-blue;
-    display: inline;
+    display:flex;
+    align-items: center;
     text-decoration: none;
+    text-align: center;
     padding: 10px;
     background-color: $lighter-blue;
     margin: 12px 4px;
     border-radius: 15px;
+  }
+}
+
+@media(max-width: 767px) {
+  .work-skills li {
+    font-size: 10px;
   }
 }
