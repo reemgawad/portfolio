@@ -38,6 +38,7 @@ p {
   align-items: flex-end;
   justify-content: center;
   background-color: $light-orange;
+  padding-top: 110px;
 }
 
 
@@ -98,6 +99,7 @@ p {
 @media(max-width: 767px) {
   .home-heading-container {
     height: auto;
+    padding-top: 0px;
   }
   .headline-tags {
     align-items: center;
