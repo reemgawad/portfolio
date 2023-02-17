@@ -1,7 +1,7 @@
-<!-- Banner/Header-->
+<%# Banner/Header %>
 <div class="home-heading-container">
   <div class="row reverse-headline" style="margin: auto">
-    <div class="headline-tags col-12 col-md-6 p-0">
+    <div class="headline-tags col-12 p-0">
       <h1 class="main-heading">Hi, I'm <span class="hover-underline">Reem</span></h1>
       <br>
       <h2 class="sub-heading"> a fullstack developer.</h2>
@@ -13,23 +13,20 @@
         <% end %>
       </div>
     </div>
-    <div class="col-12 col-md-6 p-0 text-center">
-      <%= image_tag "reem-pic.png", class: "avatar" %>
-    </div>
   </div>
 </div>
-<!-- Wave SVG-->
+<%# Wave SVG %>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#F8EAE1" fill-opacity="1" d="M0,32L48,48C96,64,192,96,288,138.7C384,181,480,235,576,261.3C672,288,768,288,864,266.7C960,245,1056,203,1152,197.3C1248,192,1344,224,1392,240L1440,256L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
 
-<!-- Portfolio section -->
-<!-- 2x2 col-6 col-6 then col-12 on md/sm -->
+<%# Portfolio section  %>
+<%# 2x2 col-6 col-6 then col-12 on md/sm  %>
 
 <div class="d-flex justify-content-center align-items-center" id="portfolio">
   <div class="container">
     <h2 class="d-flex justify-content-center my-5">Portfolio</h2>
     <div class="row justify-content-center">
       <div class="col-12 col-lg-6">
-        <div class="work-card"> <!--Brunchtime-->
+        <div class="work-card">
           <div class="work-img-div brunchtime"></div>
           <div class="work-tags">
             <ul class="work-skills">
@@ -49,7 +46,29 @@
         </div>
       </div>
       <div class="col-12 col-lg-6">
-        <div class="work-card"> <!--Snake-->
+        <div class="work-card">
+          <div class="work-img-div theatr"></div>
+          <div class="work-tags">
+            <ul class="work-skills">
+              <li>Ruby on Rails</li>
+              <li>JavaScript</li>
+              <li>PostgreSQL</li>
+              <li>Heroku</li>
+            </ul>
+            <div class="work-tags-links">
+              <a href="https://github.com/reemgawad/theatr" target="_blank"><i class="fab fa-github"></i></a>
+              <a href="https://theatr-app.herokuapp.com/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <div class="work-desc">
+            <p>Virtual classroom prototype for high school theatre students, who can complete a variety of gamified activities to learn about a play. Teachers can assign, mark, and comment on students' activities, as well as track their progress.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-6">
+        <div class="work-card">
           <h3>Snake Game</h3>
           <div class="work-img-div ruby-games"></div>
           <div class="work-tags">
@@ -66,21 +85,7 @@
           </div>
         </div>
       </div>
-    </div>
-    <div class="row justify-content-center">
       <div class="col-12 col-lg-6 d-none">
-        <div class="work-card"> <!--Arood-->
-          <h3>Arood - coming soon</h3>
-          <div class="work-img-div arood"></div>
-          <div class="work-tags" style="position: absolute; top: 40px">
-            <div style="margin-top: 60px;">
-              <%= image_tag "coming-soon.png", style: "width: 80px" %>
-              <%= image_tag "bot.png", style: "width: 80px" %>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-lg-6 d-none"> <!-- Remove d-none class when card is ready -->
         <div class="work-card">
           <h3> - coming soon</h3>
           <div class="work-img-div arood"></div>
@@ -96,8 +101,8 @@
   </div>
 </div>
 
-<!-- About + skills section -->
-<!-- The 2 sub-sections will be col-6 col-6 / then col-12 on mobile-->
+<%# About + skills section  %>
+<%# The 2 sub-sections will be col-6 col-6 / then col-12 on mobile %>
 <div class="container about-container" id="about">
   <div class="row">
     <div class="col-12 col-lg-6">
@@ -116,7 +121,7 @@
   </div>
 </div>
 
-<!-- Contact section -->
+<%# Contact section %>
 <div class="container" id="contact">
   <div class="row">
     <div class="col-12 col-lg-6">

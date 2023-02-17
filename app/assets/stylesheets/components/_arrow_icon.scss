@@ -6,7 +6,17 @@
   // transition: all .3s ease-in-out;
 
   &:hover {
-    // transform: rotate(150deg);
-    // transform: translate3d(0,-5px,0);
+    // transition: transform .6s ease-in-out;
+    // transform: rotate(180deg);
+    animation: rotation 1.2s infinite linear;
+  }
+
+  @keyframes rotation {
+    50% {
+      transform: rotate(180deg);
+    }
+    100% {
+      transform: rotate(150deg);
+    }
   }
 }
